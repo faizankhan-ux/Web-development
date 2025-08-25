@@ -31,12 +31,14 @@ mode.addEventListener("click", () => {
           document.documentElement.style.setProperty("--bg", "black");
           document.documentElement.style.setProperty("--clr", "white");
           isDark = true
-          mode.innerHTML = "<i class='fa-solid fa-sun'></i> <a>Light</a>"
+          mode.innerHTML = "<i class='fa-solid fa-sun' style= color:'black></i> <a>Light</a>"
      } else {
           document.documentElement.style.setProperty("--clr", "black");
           document.documentElement.style.setProperty("--bg", "white");
           isDark = false
-          mode.innerHTML = "<i class='fa-solid fa-moon' style='color: #ffffff;'></i> <a>Dark</a>"
+          mode.innerHTML = "<i class='fa-solid fa-moon' style='color: 'black;'></i> <a>Dark</a>"
+          mode.backgroundColor = "white"
+          mode.color = "black"
      }
 })
 
