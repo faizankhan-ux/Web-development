@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Edu+NSW+ACT+Cursive:wght@500&family=Playwrite+CA:wght@100..400&family=Playwrite+FR+Trad+Guides&family=Playwrite+US+Trad:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+     --bg: white;
+     --clr: black;
+}
+
+* {
+     padding: 0;
+     box-sizing: border-box;
+     cursor: auto;
+}
+
+body {
+     background-color: var(--bg);
+     color: var(--clr);
+     transition: 0.5s;
+     position: relative;
+     top: 0;
+}
+
+.navbar {
+     margin-top: 25px;
+     height: 60px;
+     width: 80vw;
+     background-color: var(--bg);
+     color: var(--clr);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border: 1px solid var(--clr);
+     border-radius: 1rem;
+     margin: auto;
+     padding-left: 1rem;
+     padding-right: 1rem;
+}
+
+.navbar h1 {
+     font-family: "Playwrite CA", cursive;
+     font-weight: 400;
+}
+
+.nav-right {
+     height: 60px;
+     width: 40vw;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+.nav-right a {
+     text-decoration: none;
+     color: var(--clr);
+     cursor: pointer;
+}
+a:hover{
+     text-decoration:underline
+}
+.theme {
+     background-color: var(--clr);
+     color: var(--bg);
+     height: 25px;
+     width: 75px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     border-radius: 5px;
+}
+
+.theme:hover {
+     box-shadow: 0px 0px 10px var(--clr);
+     transform: translateY(-2px);
+     transition: 0.5s;
+}
+
+.theme a {
+     color: var(--bg);
+     margin-left: 10px;
+}
+
+main {
+     margin: auto;
+     border: 1px solid var(--clr);
+     padding: 20px;
+     margin: 1rem;
+     min-height: 60vh;
+     background-color: var(--bg);
+     color: var(--clr);
+     border: 1px solid var(--clr);
+}
+
+main .name {
+     font-family: 'Edu NSW ACT Hand ', Cursive;
+     background-color: #2f7e78;
+     min-height: 100px;
+     width: 500px;
+     text-align: start;
+     padding: 20px;
+     margin: 20px;
+     border-radius: 1rem;
+}
+
+.arabic , .english {
+     border: 1px solid var(--clr);
+     min-height: 100px;
+     min-width: 80vw;
+     margin: 20px;
+     padding: 20px;
+     text-align: center;
+     transition: 0.5s;
+     border-radius: 1rem;
+     font-size: x-large;
+     font-weight: 700;
+     background-color: yellow;
+     color: black;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+
+.arabic p , .english p {
+     margin: 10px;
+}
+
+.inputs {
+     display: flex;
+     align-items: center;
+     justify-self: center;
+}
+
+.inputs input {
+     background-color: palegoldenrod;
+     height: 50px;
+     width: 40vw;
+     margin: auto;
+     color: black;
+     font-weight: 700;
+     text-align: center;
+     border-radius: 1rem;
+     border: 1px solid black;
+     box-shadow: 0px 0px 10px palegoldenrod;
+}
+
+.inputs button {
+     background-color: darkgreen;
+     height: 50px;
+     width: 90px;
+     margin: 20px;
+     color: white;
+     font-weight: 700;
+     text-align: center;
+     border-radius: 1rem;
+     border: 1px solid black;
+     cursor: pointer;
+}
+
+.inputs button:hover {
+     box-shadow: 0px 0px 10px 1px green;
+     transform: scale(1.05);
+     transition: 0.5s;
+}
+
+.loader {
+     background: rgba(255, 255, 255, 0.15); /* semi-transparent */
+     backdrop-filter: blur(10px);  /* blur background behind it */
+     height: 100%;
+     width: 100%;
+     position: fixed;
+     z-index: 5;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     display: none;
+     margin: 0px;
+}
+
+.spinner {
+     width: 60px;
+     height: 60px;
+     border: 5px solid rgba(155, 155, 155, 0.3);
+     border-top: 5px solid green;
+     border-radius: 50%;
+     animation: rot 1s infinite linear;
+}
+
+@keyframes rot {
+     to {
+          transform: rotate(360deg);
+     }
+}

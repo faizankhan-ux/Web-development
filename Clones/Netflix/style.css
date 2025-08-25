@@ -1,0 +1,246 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     box-sizing: border-box;
+     scrollbar-width: none;
+}
+
+.navbar{
+     height: 12vh;
+     width: 100vw;
+     background-color: black;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     position: fixed;
+     box-shadow: 13px 12px 20px 16px black;
+     z-index: 1;
+}
+
+.navbar > .logo > img{
+     height: 1.5em;
+     margin-left: 10px;
+}
+
+.empty{
+     background-color: black;
+     height: 10h;
+     width: 50vw;
+}
+
+.lan{
+     height:5vh;
+     color: white;
+     display: flex;
+     align-items: center;
+     border: 1px solid white;
+     border-radius: 4px;
+     padding: 5px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     
+}
+
+.lan select{
+     margin-left:10px;
+     border: none;
+     border-radius: 2px;
+     background-color: black;
+     color: aliceblue;
+}
+
+.lan:hover{
+ box-shadow: 0px 0px 2px 1px white;
+ transition: 0.5s;
+}
+
+.navbar a{
+     height: 5vh;
+     width: 7vw;
+     margin-right:50px ;
+     background-color: red;
+     color: white;
+     border-radius: 9px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+}
+
+.navbar a:hover{
+     box-shadow: 0px 0px 10px  1px red;
+     transition: 0.2s;
+     border: 1px solid white;
+}
+
+/* hero */
+.hero{
+     background-image: url("bg.jpg");
+     height: 90vh;
+     width: 3.6*80vh;
+     background-repeat: repeat;
+     box-shadow: 1px -8px 20px 0px black inset;
+}
+
+.hero .black{
+     height: 100%;
+     width: 100%;
+     opacity: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.text{
+     background-color: rgba(0, 0, 0, 0.496);
+     border: 1px solid white;
+     height: 70%;
+     width: 40%;
+     min-height: 50%;
+     min-width: 50%;
+     text-align: center;
+     margin-top: 40px;
+     color: white;
+     padding-top: 40px;
+     border-radius: 7px;
+     
+}
+.text:hover{
+     box-shadow: 0px 0px 20px white;
+     transition: 0.5s;
+     padding-top:  45px; ;
+}
+.inp{
+     height: 30%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.text p:nth-child(2){
+     margin-top: 15px;
+}
+.text p:nth-child(3){
+     margin-top: 20px;
+     margin-bottom: 10px;
+}
+
+.inp input{
+     height: 25%;
+     width: 35%;
+     border-radius: 4px;
+}
+.inp a{
+     background-color: red;
+     height: 25%;
+     width: 20%;
+     border-radius: 5px;
+     margin-left: 4px;
+     color: white;
+}
+
+.inp a:hover{
+     box-shadow: 0px 0px 10px  1px red;
+     transition: 0.5s;
+     border: 1px solid white;
+}
+
+.content{
+     background-color: black;
+     /* height: 500vh; */
+     width: 100vw;
+     box-shadow: 0px -20px 20px 2px black ;
+     color: white;
+}
+.content h1{
+     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+     font-weight: 600;
+     margin-bottom: 10px;
+}
+
+.content .text2{
+     border: 1px solid white;
+     box-shadow: 0px 0px 20px  4px rgba(13, 13, 197, 0.765);
+     border-radius: 15px;
+     height: 110px;
+     text-align: center;
+     padding-top: 15px;
+     margin: 10px;
+}
+.content .t2{
+     box-shadow: 0px 0px 20px  4px purple;
+}
+
+.series{
+     height: 60vh;
+     width: 100vw;
+     background-color: black;
+     color: white;
+     display: flex;
+     margin: 10px;
+     margin-top: 20px;
+}
+.series .info{
+     margin-top: 29px;
+     border: 1px solid white;
+     padding: 10px;
+     border-radius: 10px;
+
+}
+
+.info p{
+     margin-top: 25px;
+     margin-bottom: 50px;
+}
+.info a{
+     background-color: yellow;
+     margin-top: 40px;
+     height: 45px;
+     width: 120px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: black;
+     font-weight: 600;
+     font-family: 'Courier New', Courier, monospace;
+     border-radius: 5px;
+}
+.info a:hover{
+     box-shadow: 0px 0px 12px 1px yellowgreen;
+     height: 44px;
+     width: 118px;
+     transition: 0.2s;
+}
+
+.series .series-scroll{
+     /* border: 1px solid white; */
+     display: flex;
+     overflow-x: scroll;
+     scrollbar-width: none;
+     white-space: nowrap;
+     border-radius: 10px;
+     margin: 10px;
+     margin-top: 29px;
+}
+.list img{
+     height: 200px;
+}
+.list{
+     width: 400px;
+     background-color: black;
+     border: 1px solid white;
+     text-align: center;
+     border-radius: 16px;
+     margin: 10px;
+
+     
+}
+.list:hover{
+     box-shadow: 0px 0px 16px  0px white;
+     transition: 0.5s;
+     padding: 3px;
+}
+.list p{
+     color: transparent;
+}
+
+
