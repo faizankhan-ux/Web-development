@@ -23,7 +23,6 @@ body {
      }
 }
 
-
 .navbar {
      margin-top: 1rem;
      width: 95%;     
@@ -179,7 +178,13 @@ main .name {
      border: 5px solid rgba(155, 155, 155, 0.3);
      border-top: 5px solid green;
      border-radius: 50%;
-     animation: rot 1s infinite linear;
+     animation: rot .5s infinite linear;
+}
+
+@keyframes rot {
+     to{
+          transform: rotate(360deg);
+     }
 }
 
 
