@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Movie Search</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+          integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+     <aside>
+          <i class="fa-solid fa-xmark"></i>
+          <a>Home</a>
+          <a>Movies</a>
+          <a>TV shows</a>
+          <a>About</a>
+     </aside>
+     <i class="fa-solid fa-bars menu" style="color: #B197FC;"></i>
+     <div class="navbar ">
+          <div class="nav-right">
+               <ul>
+                    <li>Home</li>
+                    <li>Movies</li>
+                    <li>TV shows</li>
+                    <li>About</li>
+               </ul>
+          </div>
+          <button id="log-in">Log in</button>
+     </div>
+     <main>
+          <div class="top border">
+               <h1>Movie Search</h1>
+               <div class="search-bar">
+                    <input autocomplete="off" id="search" placeholder="Search Movies, Tv shows, Web series"
+                         aria-label="Search Movies" type="text">
+                    <i id="srbtn" class="fa-solid fa-magnifying-glass"></i>
+               </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="container border">
+               <h2>Movies</h2>
+               <div class="cards border">
+                    <!-- <div class="card border">
+                         <div class="poster"></div>
+                         <h2>Title</h2>
+                         <p>Year</p>
+                         <p>category</p>
+                    </div> -->
+
+               </div>
+          </div>
+     </main>
+
+
+     <script src="app.js"></script>
+</body>
+
+</html>
