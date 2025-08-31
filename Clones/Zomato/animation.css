@@ -1,0 +1,55 @@
+::-webkit-scrollbar {
+     display: none;
+     scroll-behavior: smooth;
+}
+
+.btn:hover {
+     cursor: pointer;
+     scale: 1.1;
+     transition: all 0.5s ease-in-out;
+
+}
+
+.food-left {
+     animation: l-r 1s ease-in-out;
+     animation-range: 10% entry cover 50%;
+     animation-timeline: view();
+}
+
+@keyframes l-r {
+     from {
+          transform: translate(-30%, -30%);
+     }
+}
+
+
+.food-right {
+     animation: r-l 1s ease-in-out;
+     animation-range: 10% entry cover 50%;
+     animation-timeline: view();
+}
+
+@keyframes r-l {
+     from {
+          transform: translate(30%, -30%);
+     }
+}
+
+
+ul li:hover {
+     cursor: pointer;
+     text-decoration: underline;
+}
+
+#page2{
+     animation: clr 1s both ease-in-out;
+     animation-timeline: view();
+     animation-range: entry 10% cover 50%;
+}
+
+@keyframes clr {
+     to{
+          background-color: white;
+     }
+}
+
