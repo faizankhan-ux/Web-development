@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.tasklist{
+     scrollbar-width: none;
+     scroll-behavior: smooth;
+}
